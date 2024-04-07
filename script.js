@@ -11,7 +11,7 @@ const SearchImage = async(e)=>{
     console.log(imgObj);
     const arr = imgObj.results;
     arr.forEach((el,index) => {
-        imageContainer.innerHTML += `<img class="h-60 m-2" src="${imgObj.results[index].urls.full}"/>`
+        imageContainer.innerHTML += `<a href ="${imgObj.results[index].urls.full}"><img class="h-60 m-2" src="${imgObj.results[index].urls.full}"/></a>`
     });
     input.value = '';
     // moreBtn.innerHTML += (`<button class="bg-red-400 p-2 w-32">More</button>`);
